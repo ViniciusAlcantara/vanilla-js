@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Busca Kitsu</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1 class="menu font-light"><span class="font-bold"><span class="sub">BUS</span>CA KITSU</span> TESTE FRONT-END</h1>
+			<h1 class="float-right font-light segunda-coluna">Vinícius Avelino Alcântara</h1>
+		</div>
+		<div class="pesquisa">
+			<label for="hero" class="label">Nome do Personagem</label><br/>
+			<input type="text" name="hero" class="input-radius" id="search">
+		</div>
+		<div class="grid-container">
+			<table class="table-hover" id="personagens">
+				<tr>
+					<th class="grid-item twenty-five-percent primeira-coluna">Personagem</th>
+					<th class="grid-item seventy-five-percent segunda-coluna">Descrição</th>
+				</tr>
+				<tbody>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<a class="arrow" id="button_prev">&laquo;</a>
+				<div id="pages">
+				</div>
+				<a class="arrow" id="button_next">&raquo;</a>
+			</div>
+		</div>
+		<template id="paginas">
+			<a class="page"></a>
+			<a class="page"></a>
+			<a class="page"></a>
+			<a class="page"></a>
+			<a class="page"></a>
+			<a class="page"></a>
+		</template>
+		<template id="paginas-telas-menores">
+			<a class="page"></a>
+			<a class="page"></a>
+			<a class="page"></a>
+		</template>
+		<template id="root">
+			<tr class="mouse-over">
+				<td class="padding-10 primeira-coluna"></td>
+				<td class="padding-10 segunda-coluna"></td>
+			</tr>
+		</template>
+		<template id="modal-body">
+			<img src="kitsu2.png" id="img01" width="100%" height="20%">
+			<p>Nome: Cowboy Bebop: Yose Atsume Blues</p>
+			<p>Tipo: anime</p>
+			<p>Classificação Indicativa: 18 anos</p>
+			<p>Nota: 74.4</p>
+			<p>Ranking de Populariade: </p>
+			<p>Ranking de Nota: </p>
+			<p>Tipo de show: Especial</p>
+			<p>Sinopse: Due to the violence portrayed in the Cowboy Bebop world and violence in Japanese schools, the series
+				was briefly cancelled and an extra session was created as a final episode to the first thirteen episodes aired.
+				Called "Session XX: Mish-Mash Blues," a compilation of clips from previous episodes, it aired on June 26, 1998
+				on TV Tokyo. The episode was never released on DVD. In it, the characters provide a philosophical commentary and
+				end with the words: This Is Not The End. You Will See The Real "Cowboy Bebop" Someday!
+				↵(Source: AniDB)</p>
+		</template>
+		<div id="modal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h3>Detalhes</h3>
+				</div>
+				<div id="modal-detalhes" class="padding-left-right padding-10">
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+		<script src="script.js"></script>
+	</footer>
+</body>
+</html>

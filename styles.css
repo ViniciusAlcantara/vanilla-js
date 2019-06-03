@@ -1,0 +1,292 @@
+h1 {
+    color: #D42026;
+}
+h2 {
+    color: #D42026;
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    color: white;
+    background-color: #D42026;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-right-width:10px;
+    border-style:solid;
+    border-color: white;
+    height: 40px;
+}
+th, td {
+    border-bottom: 3px solid rgba(212, 32, 38, 0.1);
+    width: 112px;
+}
+tr, td {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #4E4E4E;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer {
+    margin-top: 5%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    border-bottom: 12px solid #D42026;
+}
+.font-bold {
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px;
+    font-weight: 900;
+}
+.font-light {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 27px;
+}
+.label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #D42026;
+}
+.container {
+    padding-right: 42px;
+    padding-left: 42px;
+    padding-top: 20px;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.padding-10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.padding-25 {
+    padding-left: 35px;
+}
+.padding-left-right {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.header {
+    width: 100%;
+}
+.menu {
+    position: absolute;
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+}
+.grid-item {
+    text-align: left;
+    padding-left: 20px;
+}
+.circle {
+    line-height: 0;		/* remove line-height */
+    display: inline-block;	/* circle wraps image */
+    margin: 5px;
+    border-radius: 50%;	/* relative value */
+    /*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+    transition: linear 0.25s;
+    height: 50px;
+    width: 50px;
+}
+.circle img {
+    border-radius: 50%;	/* relative value for
+				   adjustable image size */
+}
+.circle:hover {
+    transition: ease-out 0.2s;
+    -webkit-transition: ease-out 0.2s;
+}
+
+div.circle {
+    color: transparent;
+} /* IE fix: removes blue border */
+.twenty-five-percent{
+    width: 25%;
+}
+.fifty-percent {
+    width: 50%;
+}
+.seventy-five-percent {
+    width: 75%;
+}
+.table-hover tr:hover td {
+    background-color: #ffcdd2;
+}
+.sub {
+    border-bottom: 4px solid #D42026;
+}
+.input-radius {
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #A5A5A5;
+    width: 32%;
+    height: 5%;
+    font-size: 25px;
+}
+.pesquisa {
+    float: left;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    width: 100%;
+}
+.pagination {
+    margin-top: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagination a {
+    color: #D42026;
+    float: left;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.page {
+    border-radius: 60%;
+    padding: 5px 5px 5px 5px;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    border: 1px solid #D42026;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arrow {
+    border-radius: 60%;
+    padding-right: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Style the active/current link */
+.pagination a.active {
+    background-color: #D42026;
+    border-radius: 60%;
+    border: 1px solid #D42026;
+    color: white;
+}
+.page a:hover {
+    background-color: #D42026;
+    border-radius: 60%;
+    border: 1px solid #D42026;
+    color: white;
+    opacity: 0.6;
+}
+.descricao {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #D42026;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #D42026;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    overflow-y: auto;
+    max-height: calc(100vh - 210px);
+    border: 4px solid #D42026;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    padding-left: 100px; /* Location of the box */
+    padding-bottom: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border: 1px solid #D42026;
+}
+
+@media (max-width: 900px) {
+    .segunda-coluna  {
+        display: none;
+    }
+    .primeira-coluna {
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .pesquisa {
+        float: left;
+        padding-top: 20%;
+        padding-bottom: 12px;
+        width: 100%;
+    }
+    .input-radius {
+        float: left;
+        border-radius: 5px;
+        border: 1px solid #A5A5A5;
+        width: 100%;
+        height: 20%;
+        font-size: 25px;
+    }
+    .table-hover {
+        width: 100%;
+    }
+    .modal {
+        padding: 10% 10% 10% 10%;
+    }
+    .modal-content {
+        max-width: 70%;
+    }
+    .page {
+        margin-right: 30px;
+        margin-top: 18px;
+        margin-bottom: 24px;
+    }
+
+    .arrow {
+        margin-left: 30px;
+        margin-right: 60px;
+    }
+}
